@@ -30,7 +30,6 @@ public class Model implements Observable {
         }
     }
 
-
     /**
      * Crea un coche y lo mete en el parking
      * @param modelo del coche

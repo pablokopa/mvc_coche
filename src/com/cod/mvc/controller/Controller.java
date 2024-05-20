@@ -15,6 +15,15 @@ public class Controller{
         miModelo.crearCoche(nombre, matricula);
     }
 
+    /*
+    * Cambiar velocidad
+    * @param matricula del coche
+    * @param velocidad nueva
+    * */
+    public static void cambiarVelocidad (String matricula, Integer velocidad){
+        miModelo.cambiarVelocidad(matricula,velocidad);
+    }
+
     public static void main(String[] args) {
 
         // el patron Observer en java nos exige instanciar la clase observable
@@ -34,9 +43,9 @@ public class Controller{
 
         Coche ferrari = Model.getCoche("SBC 1234");
         // modifica la velocidad
-        miModelo.cambiarVelocidad("SBC 1234", 30);
+        cambiarVelocidad("SBC 1234", 30);
 
         // otro cambio de velocidad
-        miModelo.cambiarVelocidad("HYU 4567", 100);
+        cambiarVelocidad("HYU 4567", 100);
     }
 }

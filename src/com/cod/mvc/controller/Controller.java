@@ -15,11 +15,11 @@ public class Controller{
         miModelo.crearCoche(nombre, matricula);
     }
 
-    /*
+    /**
     * Cambiar velocidad
     * @param matricula del coche
     * @param velocidad nueva
-    * */
+    */
     public static void cambiarVelocidad (String matricula, Integer velocidad){
         miModelo.cambiarVelocidad(matricula,velocidad);
     }
